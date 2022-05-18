@@ -1,0 +1,37 @@
+//
+//  ContentView.swift
+//  FitAI
+//
+//  Created by Zaden Connell on 5/15/22.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            StatsView()
+                .tabItem {
+                    Image(systemName: "chart.bar")
+                    Text("Stats")
+                }
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            
+    }
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C468A3428344BEC0066EA00 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C468A3328344BEC0066EA00 /* HomeView.swift */; };
+		0C468A3628344C010066EA00 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C468A3528344C010066EA00 /* StatsView.swift */; };
+		0C468A3828344C140066EA00 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C468A3728344C140066EA00 /* SettingsView.swift */; };
 		0C67EEA22831DE3300689D75 /* FitAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67EEA12831DE3300689D75 /* FitAIApp.swift */; };
 		0C67EEA42831DE3300689D75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67EEA32831DE3300689D75 /* ContentView.swift */; };
 		0C67EEA62831DE3400689D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C67EEA52831DE3400689D75 /* Assets.xcassets */; };
@@ -14,9 +17,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C468A3328344BEC0066EA00 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0C468A3528344C010066EA00 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		0C468A3728344C140066EA00 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0C67EE9E2831DE3300689D75 /* FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C67EEA12831DE3300689D75 /* FitAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitAIApp.swift; sourceTree = "<group>"; };
-		0C67EEA32831DE3300689D75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0C67EEA32831DE3300689D75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = FitAI/Views/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		0C67EEA52831DE3400689D75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C67EEA82831DE3400689D75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +38,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C468A2F283449510066EA00 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0C468A31283449760066EA00 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0C468A3228344AFA0066EA00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C67EEA32831DE3300689D75 /* ContentView.swift */,
+				0C468A3328344BEC0066EA00 /* HomeView.swift */,
+				0C468A3528344C010066EA00 /* StatsView.swift */,
+				0C468A3728344C140066EA00 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0C67EE952831DE3300689D75 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +82,10 @@
 		0C67EEA02831DE3300689D75 /* FitAI */ = {
 			isa = PBXGroup;
 			children = (
+				0C468A2F283449510066EA00 /* Components */,
 				0C67EEA12831DE3300689D75 /* FitAIApp.swift */,
-				0C67EEA32831DE3300689D75 /* ContentView.swift */,
+				0C468A3228344AFA0066EA00 /* Views */,
+				0C468A31283449760066EA00 /* Managers */,
 				0C67EEA52831DE3400689D75 /* Assets.xcassets */,
 				0C67EEA72831DE3400689D75 /* Preview Content */,
 			);
@@ -137,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C468A3828344C140066EA00 /* SettingsView.swift in Sources */,
+				0C468A3628344C010066EA00 /* StatsView.swift in Sources */,
+				0C468A3428344BEC0066EA00 /* HomeView.swift in Sources */,
 				0C67EEA42831DE3300689D75 /* ContentView.swift in Sources */,
 				0C67EEA22831DE3300689D75 /* FitAIApp.swift in Sources */,
 			);
@@ -275,6 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
